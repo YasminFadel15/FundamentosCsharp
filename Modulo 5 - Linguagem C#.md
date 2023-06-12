@@ -57,9 +57,35 @@
 # Parse
   - Método presente em todo tipo primitivo.
   - Extensão usada para converter um caractere ou string para um tipo qualquer.
-  - Exemplo: int inteiro = int.Parse("100")
+  - Exemplo: int inteiro = int.Parse("100");
 
 # Convert
   - Classe usada para converter vários tipos de valor para outros tipos.
   - Informar o tipo na chamada da conversão.
-  - Exemplo: int inteiro = Convert.ToInt32("100")
+  - Exemplo: int inteiro = Convert.ToInt32("100");
+
+# Métodos/funções
+  - Possui um retorno, um nome e parâmetros em sua assinatura.
+  - Começam sempre com maiúscula.
+  - Pode ter parâmetros opcionais que vem por último e devem ser inicializados.
+
+# Tipos de referência e valor
+  - Os tipos de valor armazenam os dados (struct).
+  - Os tipos de referência armazenam o endereço dos dados (class), então ao atribuir ele para outra variável, não cria uma cópia, e sim aponta para o mesmo valor.
+
+# Structs
+  - Armazenam tipos de dados.
+  - Nome sempre em maiúsculo, tanto da struct quanto das propriedades.
+  - Criado a partir da palavra 'new'.
+  - As propriedades devem ser definidas (public, private, protected).
+  - Exemplo: var product = new Product();
+    product.Id = 1;
+    product.Title = "Casa";
+  - Método construtor é um método com o mesmo nome da struct que não retorna nada. Eles facilitam a criação da estrutura.
+
+# Enumeradores
+  - Usado para uma melhor visualização do código.
+  - Substituem o uso de inteiros.
+  - Usado em dados fixos, começa com 'E'.
+  - Exemplo: enum EEstadoCivil { ... }
+  - Pode ser usado como tipo.
